@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json", 
+  "extends": [
+    "local>AndreaGiulianelli/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "description": "Trigger a patch update if action.yml gets updated",
+      "matchPaths": ["+(action.yml)"],
+      "semanticCommitScope": "core-deps"
+    }
+  ]
+}
